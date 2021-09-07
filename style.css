@@ -1,0 +1,268 @@
+*,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*background: digital-frontiers-30 https://drive.google.com/drive/u/0/folders/1yC_r12JlHKREPS-b07tQ1ldh890Nk0GU*/
+body {
+    background-image: url(images/Backgrounds/HomepageBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*main*/
+main {
+    margin-top: 70px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main p:first-of-type {
+    margin-top: 24px;
+}
+
+article {
+    height: 500px;
+    width: 250px;
+    background-color: rgb(242, 242, 242, 50%);
+    border-radius: 5px;
+    margin: 0px 4px 10px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/*class gebruikt, omdat ik de achtergrond van de article langer wilde maken dan bij de pagina characters*/
+.worlds article {
+    height: 500px;
+    width: 250px;
+}
+
+/*p*/
+p {
+    font-size: 1.25em;
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    width: 50%;
+    padding: 3px;
+    color: #F2F2F2;
+    text-shadow: #333 0 1px;
+}
+
+/*voor de world en characters page wil ik de p'tjes van de regions een
+achtergrond geven en ik wil de ruimte groter maken, maar de ruimte 
+van p op de homepage niet veranderen: vandaar article p*/
+article p {
+    width: 95%;
+    color: #2A2A2A;
+}
+
+article img {
+    width: 250px;
+}
+
+div {
+    display: flex;
+    align-items: flex-start;
+    font-size: smaller;
+    text-align: center;
+}
+
+/* alle styling voor de nav is hieronder */
+/* header nav, voor de head balk bovenaan */
+header nav {
+    display: flex;
+    background-color: #2b2b2b;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 70px;
+}
+
+/* header nav img, staan voor de linker "home image" */
+header nav img {
+    position: absolute;
+    top: 0;
+    height: 60px;
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+/* onderstaande is om de content van mijn ul te kunnen centreren in het midden.*/
+header nav ul {
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav li {
+    padding: 4px;
+    list-style: none;
+}
+
+nav li a {
+    font-size: 1.25em;
+    color: #343434;
+    font-family: 'Lato', sans-serif;
+    background-color: #f2f2f2;
+    border: 2.5px solid #d2d2d2;
+    box-shadow: inset 0px 0px 5px #333;
+    padding: 3px 15px;
+    text-decoration: none;
+}
+
+/*einde styling nav*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+form {
+    margin-top: 30px;
+    font-size: 1.5em;
+    font-family: 'Lato', cursive;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 6px rgba(32, 32, 32, 0.5);
+}
+
+input,
+textarea {
+    font-size: .8em;
+    padding: 4px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    font-family: 'Lato', cursive;
+    resize: none;
+}
+
+input[type="submit"] {
+    width: 100px;
+}
+
+fieldset {
+    padding: 8px 8px;
+    margin-bottom: 16px;
+}
+
+/*headings*/
+/*ik wil alleen op de homepage een image gebruiken, dus gebruik ik geen klas, maar gewoon: h1 img*/
+h1 {
+    width: 40%;
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Fira Mono', monospace;
+    color: #F2F2F2;
+    line-height: 0.9;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+h1 img {
+    height: 150px;
+}
+
+h1 span {
+    display: block;
+    font-size: .5em;
+}
+
+h2 {
+    margin: 10px 0px;
+    width: 100%;
+    font-size: 2.5em;
+    font-family: 'Fira Mono', monospace;
+    text-align: center;
+    color: #2B2B2B;
+    background-color: rgb(242, 242, 242, 70%);
+    border: 5px rgb(168, 168, 168, 70%) solid;
+}
+
+h3 {
+    margin: 10px;
+    font-size: 2.17em;
+    font-family: 'Fira Mono', monospace;
+    color: #2B2B2B;
+}
+
+h4 {
+    margin-top: 20px;
+    font-size: 1.7em;
+    font-family: 'Fira Mono', monospace;
+    color: #2B2B2B;
+}
+
+/*footer*/
+footer {
+    display: flex;
+    background-color: #2b2b2b;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+}
+
+footer a {
+    font-size: 1.15em;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    margin-left: 32px;
+}
+
+footer span {
+    font-size: 1em;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    justify-content: flex-end;
+    margin-right: 32px;
+}
+
+footer div {
+    flex: 1;
+    flex-direction: row;
+}
+
+footer div:first-of-type {
+    justify-content: flex-start;
+}
+
+footer div:last-of-type {
+    justify-content: flex-end;
+}
+
+/*pseudo classes*/
+a:hover {
+    opacity: .5;
+    transition: .25s ease-in-out;
+}
+
+/*pseudo elements*/
+/*bron: https://stackoverflow.com/questions/41867664/what-is-the-difference-between-pseudo-classes-and-pseudo-elements/41867706#41867706*/
+h1 span::selection,
+h2::selection,
+h3::selection,
+main p::selection {
+    background-color: #653a56;
+}
+
+a::selection,
+img::selection {
+    opacity: 0.5;
+}

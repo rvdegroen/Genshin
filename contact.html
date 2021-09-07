@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact</title>
+    <!--De onderstaande links zijn voor de google fonts die ik gebruik voor mijn CSS-->
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="./index.html"><img src="./images/Logos/GenshinImpactLogoWhite.png"
+                    alt="GenshinImpactHomeButton"></a>
+            <ul>
+                <li><a href="./world.html">World</a></li>
+                <li><a href="./characters.html">Characters</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Contact</h1>
+            <p>We'd like to hear what our visitors have to say.</p>
+            <p>Any questions, feedback, tips or tricks? Feel free to send us a message below!</p>
+        </section>
+
+        <form action="./submitted.html">
+            <fieldset>
+                <legend>Which one applies to you?</legend>
+
+                <input type="radio" id="question" value="question" name="reason" required>
+                <label for="question">Question</label>
+
+                <input type="radio" id="feedback" value="feedback" name="reason" required>
+                <label for="feedback">Feedback</label>
+
+                <input type="radio" id="bug" value="bug" name="reason" required>
+                <label for="bug">Reporting a bug or missing content</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Full name</legend>
+
+                <input type="text" name="name" id="name" placeholder="Full name" required>
+                <label for="name">Enter your full name</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>E-mail</legend>
+
+                <input type="email" id="email" placeholder="E-mail" required>
+                <label for="email">Enter your e-mail</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your message</legend>
+
+                <textarea id="text" name="text" placeholder="Enter your message" required></textarea>
+            </fieldset>
+
+            <input type="submit" value="Submit">
+        </form>
+
+    </main>
+
+    <footer>
+        <div>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+        <div>
+            <span>Made with ❤️ by Roshnie</span>
+        </div>
+    </footer>
+</body>
+
+</html>
